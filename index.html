@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Secondary School</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* CSS untuk Dark Mode */
+    body.dark-mode {
+      background-color: #121212;
+      color: #f0f0f0;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    header.dark-mode {
+      background-color: #333;
+    }
+    .btn.dark-mode {
+      background-color: #444;
+      color: #fff;
+    }
+
+    /* Smooth Scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Animasi untuk tombol dan elemen */
+    .btn {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+
+    /* Form Validation */
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Secondary School</h1>
+      <nav>
+        <ul>
+          <li><a href="#profil">Profil</a></li>
+          <li><a href="#jurusan">Mapil</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Selamat Datang di Website Resmi</h2>
+      <p>Secondary School – Sekolah Vokasi Berkualitas</p>
+      <a href="#profil" class="btn">Lihat Profil Sekolah</a>
+    </div>
+  </section>
+
+  <section id="profil" class="content">
+    <div class="container">
+      <h3>Profil Sekolah</h3>
+      <p>Di Secondary School, siswa mengikuti Normal (Academic) atau Express Stream. Pilihan jurusan di sini lebih terkait dengan mata pelajaran yang diambil.</p>
+      <p>Express Stream: Siswa mengikuti program pendidikan lebih cepat dan lebih intensif.</p>
+    </div>
+  </section>
+
+  <section id="jurusan" class="content gray">
+    <div class="container">
+      <h3>ACADEMIC</h3>
+      <ul>
+        <li>Bahasa Inggris</li>
+        <li>Bahasa Mandarin</li>
+        <li>Matematika</li>
+        <li>Ilmu Pengetahuan Alam (Biologi, Kimia, Fisika)</li>
+        <li>Ilmu Sosial</li>
+        <li>Seni</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="kontak" class="content">
+    <div class="container">
+      <h3>Kontak Kami</h3>
+      <form id="contactForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+        
+        <label for="phone">Nomor Telepon:</label>
+        <input type="text" id="phone" required><br>
+        
+        <button type="submit" class="btn">Kirim</button>
+      </form>
+      <div id="errorMessage" class="error"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Secondary School. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Memuat file JavaScript terpisah -->
+  <script src="script.js"></script>
+</body>
+</html>
